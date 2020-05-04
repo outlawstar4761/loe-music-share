@@ -1,5 +1,4 @@
 <div class="main-div">
-
    <mat-card class="center">
      <mat-card-title>{{song.title}}</mat-card-title>
      <mat-card-subtitle>{{song.artist}} | {{song.album}} | {{song.year}}</mat-card-subtitle>
@@ -11,20 +10,14 @@
          <button mat-icon-button color="accent" playMusic><mat-icon>play_arrow</mat-icon></button>
          <button mat-icon-button color="accent" pauseMusic><mat-icon>pause</mat-icon></button>
          <button mat-icon-button color="accent" stopMusic><mat-icon>stop</mat-icon></button>
-         <button mat-icon-button repeatMusic><mat-icon>repeat</mat-icon></button>
-         <button mat-icon-button increaseVolume>+</button>
-         <button mat-icon-button decreaseVolume>-</button>
+         <button mat-icon-button repeatMusic style="margin-left:10%;margin-right:10%"><mat-icon>repeat</mat-icon></button>
+         <button mat-icon-button increaseVolume><mat-icon>volume_up</mat-icon></button>
          <button mat-icon-button muteMusic><mat-icon>{{mute ? 'volume_off' : 'volume_mute'}}</mat-icon> </button>
+         <button mat-icon-button decreaseVolume><mat-icon>volume_down</mat-icon></button>
        </div>
      </mat-card-actions>
+     <div class="button-row">
+       <a href="https://outlawdesigns.io/loe/music/"><button mat-raised-button color="accent">Back to App</button></a>
+     </div>
    </mat-card>
-
-</div>
-
-<div class="mdc-layout-grid">
-  <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell"></div>
-    <div class="mdc-layout-grid__cell"></div>
-    <div class="mdc-layout-grid__cell"></div>
-  </div>
 </div>
