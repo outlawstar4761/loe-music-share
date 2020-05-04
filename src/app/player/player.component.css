@@ -1,0 +1,29 @@
+.albumPreview{
+  justify-content:space-around;
+  max-width: 350px;
+  max-width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.center{
+  width: 75%;
+  margin: 10px auto;
+}
+
+.main-div{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playerControls{
+  justify-content:space-around;
+  max-width: 350px;
+  max-width: 350px;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: 50%;
+}

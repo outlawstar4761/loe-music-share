@@ -1,0 +1,30 @@
+<div class="main-div">
+
+   <mat-card class="center">
+     <mat-card-title>{{song.title}}</mat-card-title>
+     <mat-card-subtitle>{{song.artist}} | {{song.album}} | {{song.year}}</mat-card-subtitle>
+     <mat-card-content>
+       <img [src]="song.cover_path" class="albumPreview">
+     </mat-card-content>
+     <mat-card-actions>
+       <div class="button-row" class="playerControls">
+         <button mat-icon-button color="accent" playMusic><mat-icon>play_arrow</mat-icon></button>
+         <button mat-icon-button color="accent" pauseMusic><mat-icon>pause</mat-icon></button>
+         <button mat-icon-button color="accent" stopMusic><mat-icon>stop</mat-icon></button>
+         <button mat-icon-button repeatMusic><mat-icon>repeat</mat-icon></button>
+         <button mat-icon-button increaseVolume>+</button>
+         <button mat-icon-button decreaseVolume>-</button>
+         <button mat-icon-button muteMusic><mat-icon>{{mute ? 'volume_off' : 'volume_mute'}}</mat-icon> </button>
+       </div>
+     </mat-card-actions>
+   </mat-card>
+
+</div>
+
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell"></div>
+    <div class="mdc-layout-grid__cell"></div>
+    <div class="mdc-layout-grid__cell"></div>
+  </div>
+</div>
