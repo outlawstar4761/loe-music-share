@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PlayerComponent } from './player/player.component';
 import { ErrorComponent } from './error/error.component';
 
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+
 const appRoutes: Routes = [
   {path:':token',component:PlayerComponent},
   {path:'error',component:ErrorComponent},
@@ -34,7 +36,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     HttpClientModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

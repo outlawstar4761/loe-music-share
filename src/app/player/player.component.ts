@@ -33,7 +33,6 @@ export class PlayerComponent implements OnInit {
   private _musicPlayerVolumeSubscription:any;
 
   constructor(private _musicPlayerService:MusicPlayerService,private route: ActivatedRoute,private http:HttpClient) {
-    console.log(this._musicPlayerService.autoPlay);
     route.params.subscribe((params)=>{
       console.log(params);
       if(params['token'] == 'error'){
